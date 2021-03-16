@@ -6,8 +6,8 @@ workflows:
         name: "2048"
         environment:
             vars:
-                XCODE_WORKSPACE: "swift-2048-master"
-                XCODE_SCHEME: "build"
+                XCODE_WORKSPACE: "{{ swift-2048-master }}"
+                XCODE_SCHEME: "{{ build }}"
             xcode: latest
             cocoapods: default
         scripts:
